@@ -1,3 +1,4 @@
+rm -rf .git
 cd ..
 git checkout --orphan latest_branch
 shopt -s extglob
